@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212429"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/slice" />
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="29dp"
+                    android:text="Professor Albus Dumbledore"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="18dp"
+                    android:text="Department of Computer Science"
+                    android:textColor="@color/textcolor"
+                    android:textSize="22.6dp"
+                    android:textStyle="bold" />
+
+                <customfonts.MyTextView_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="PES University"
+                    android:textColor="#d2d3d4"
+                    android:textSize="11.5dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+
+
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle3"
+                            android:orientation="vertical"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:paddingTop="25dp">
+
+
+
+                            <customfonts.MyTextView_Roboto_Bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Machine Learning"
+                                android:theme="@style/Rupees" />
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/e1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="Monday"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/e2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="Wednesday"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/e3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="Friday"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:expansion_headerIndicator="@id/headerIndicator1"
+                            app:expansion_layout="@id/expansionLayout1"
+                            app:expansion_toggleOnClick="true">
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/d1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="View detailed Reports"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:id="@+id/headerIndicator1"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_width="wrap_content"
+                                app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:id="@+id/expansionLayout1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusableInTouchMode="true"
+                                android:orientation="vertical">
+                                
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="36dp"
+                                android:layout_marginLeft="18dp"
+                                android:orientation="horizontal">
+
+
+                                <customfonts.MyTextView_Halvetica_Medium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gnanamurthy K B"
+                                    android:textColor="#fff"/>
+
+                                <customfonts.MyTextView_Helvetica_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="No"
+                                    android:textSize="12.5dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:textColor="#000"
+                                    android:background="@drawable/rect"/>
+
+                                <customfonts.MyTextView_Roboto_Medium
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="6"
+                                    android:textSize="16dp"
+                                    android:textColor="#fff"
+                                    android:gravity="right"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="center"/>
+
+
+
+                            </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginLeft="18dp"
+                                android:orientation="horizontal">
+
+
+                                <customfonts.MyTextView_Halvetica_Medium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Burada Vivek"
+                                    android:textColor="#fff"/>
+
+                                <customfonts.MyTextView_Helvetica_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="No"
+                                    android:textSize="12.5dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:textColor="#000"
+                                    android:background="@drawable/rect"/>
+
+                                <customfonts.MyTextView_Roboto_Medium
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textSize="16dp"
+                                    android:textColor="#fff"
+                                    android:gravity="right"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_gravity="center"/>
+
+
+
+                            </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+
+
+
+
+
+                            </LinearLayout>
+
+                            <!-- CONTENT -->
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+
+                        android:src="@drawable/e2" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle3"
+                            android:orientation="vertical"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:paddingTop="25dp">
+
+
+
+                            <customfonts.MyTextView_Roboto_Bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Artificial Intelligence"
+                                android:theme="@style/Rupees" />
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/b1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="Tuesday"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/b2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="Thursday"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/b3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="Friday"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#c8cbcc"
+                            android:paddingTop="2dp" />
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:expansion_headerIndicator="@id/headerIndicator2"
+                            app:expansion_layout="@id/expansionLayout2"
+                            app:expansion_toggleOnClick="true">
+
+                        <customfonts.MyTextView_Roboto_Bold
+                            android:id="@+id/d2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle4"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="18dp"
+                            android:paddingTop="10dp"
+                            android:text="View detailed Reports"
+                            android:textColor="#fff"
+                            android:textSize="11.5dp" />
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:id="@+id/headerIndicator2"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_width="wrap_content"
+                                app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:id="@+id/expansionLayout2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusableInTouchMode="true"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="36dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="horizontal">
+
+
+                                    <customfonts.MyTextView_Halvetica_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Gnanamurthy K B"
+                                        android:textColor="#fff"/>
+
+                                    <customfonts.MyTextView_Helvetica_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No"
+                                        android:textSize="12.5dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#000"
+                                        android:background="@drawable/rect"/>
+
+                                    <customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="6"
+                                        android:textSize="16dp"
+                                        android:textColor="#fff"
+                                        android:gravity="right"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="horizontal">
+
+
+                                    <customfonts.MyTextView_Halvetica_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Burada Vivek"
+                                        android:textColor="#fff"/>
+
+                                    <customfonts.MyTextView_Helvetica_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No"
+                                        android:textSize="12.5dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#000"
+                                        android:background="@drawable/rect"/>
+
+                                    <customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="3"
+                                        android:textSize="16dp"
+                                        android:textColor="#fff"
+                                        android:gravity="right"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+                               
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="36dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="horizontal">
+
+
+                                    <customfonts.MyTextView_Halvetica_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Gnanamurthy K B"
+                                        android:textColor="#fff"/>
+
+                                    <customfonts.MyTextView_Helvetica_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No"
+                                        android:textSize="12.5dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#000"
+                                        android:background="@drawable/rect"/>
+
+                                    <customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="6"
+                                        android:textSize="16dp"
+                                        android:textColor="#fff"
+                                        android:gravity="right"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="horizontal">
+
+
+                                    <customfonts.MyTextView_Halvetica_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Burada Vivek"
+                                        android:textColor="#fff"/>
+
+                                    <customfonts.MyTextView_Helvetica_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No"
+                                        android:textSize="12.5dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#000"
+                                        android:background="@drawable/rect"/>
+
+                                    <customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="3"
+                                        android:textSize="16dp"
+                                        android:textColor="#fff"
+                                        android:gravity="right"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="36dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="horizontal">
+
+
+                                    <customfonts.MyTextView_Halvetica_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Gnanamurthy K B"
+                                        android:textColor="#fff"/>
+
+                                    <customfonts.MyTextView_Helvetica_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No"
+                                        android:textSize="12.5dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#000"
+                                        android:background="@drawable/rect"/>
+
+                                    <customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="6"
+                                        android:textSize="16dp"
+                                        android:textColor="#fff"
+                                        android:gravity="right"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:orientation="horizontal">
+
+
+                                    <customfonts.MyTextView_Halvetica_Medium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Burada Vivek"
+                                        android:textColor="#fff"/>
+
+                                    <customfonts.MyTextView_Helvetica_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="No"
+                                        android:textSize="12.5dp"
+                                        android:paddingLeft="12dp"
+                                        android:paddingRight="12dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#000"
+                                        android:background="@drawable/rect"/>
+
+                                    <customfonts.MyTextView_Roboto_Medium
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="3"
+                                        android:textSize="16dp"
+                                        android:textColor="#fff"
+                                        android:gravity="right"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:background="#1c1c1f"/>
+
+
+
+
+
+                            </LinearLayout>
+
+                            <!-- CONTENT -->
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+
+                        android:src="@drawable/b2" />
+
+
+                </FrameLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logout"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Roboto_Regular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="logout"
+                        android:textColor="#838587"
+                        android:textSize="10.5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#838587" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="Designed by Burada Vivek"
+                        android:textColor="@color/textcolor"
+                        android:textSize="12.5dp" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center"
+                        android:text="By Team []"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10.5dp" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center"
+                        android:text="UI Design By WSDESIGN"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10.5dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

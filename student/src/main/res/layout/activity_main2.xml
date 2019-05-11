@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+
+    android:background="#212429"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/slice" />
+
+        <customfonts.MyTextView_Roboto_Bold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/textcolor"
+            android:gravity="left|center"
+            android:text="Humming"
+            android:theme="@style/Rupees" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="25dp">
+
+        <customfonts.MyTextView_Roboto_Bold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:text="Harry Potter"
+            android:theme="@style/Rupees" />
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#d2d3d4"
+            android:text="Department of Computer Science!"
+            android:theme="@style/Paragraph" />
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:textColor="#d2d3d4"
+            android:text="E Section"
+            android:theme="@style/Sub_Text" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="25dp">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Machine Learning"
+                android:theme="@style/Rupees" />
+
+            <customfonts.MyTextView_Roboto_Medium
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="You don't have any latest attendence update!"
+                android:theme="@style/Paragraph" />
+
+            <customfonts.MyTextView_Roboto_Medium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="25dp"
+
+                android:theme="@style/Sub_Text" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+
+            <nl.dionsegijn.konfetti.KonfettiView
+                android:id="@+id/konfettiView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </nl.dionsegijn.konfetti.KonfettiView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

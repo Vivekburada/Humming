@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Humming</string>
+
+
+    <string name="hi">
+        <font fgcolor="#444444">Haven’t registered yet?  </font><font fgcolor="#000000">Join now</font>
+    </string>
+
+</resources>
